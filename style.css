@@ -1,0 +1,292 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "matter";
+}
+
+
+*::selection{
+    color:white;
+    background-color: #000;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    background-color: #fff;
+    
+
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+#nav{
+    width: 100%;
+    padding : 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+#nav img{
+    width : 100px
+}
+
+#nav a{
+    text-decoration: none;
+    font-weight: 400;
+    color : #000;
+    font-size: 1vw;
+    letter-spacing: -1px;
+}
+
+#nav i{
+    margin-top:3px;
+    font-size: 20px;
+}
+
+#home #homemain{
+    width:100%;
+    padding:15vw 16vw;
+}
+#homemain h1{
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+#homemain .headings  h1:hover{
+    color: black;
+}
+.headings{
+    display: flex;
+    gap:40px;
+}
+#homemain .headings h1{
+    color:transparent;
+    -webkit-text-stroke: 0.1px #000;
+    font-size: 7vw;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -5px;
+}
+
+#homelast p{
+    font-size : 1.5vw;
+    font-weight: 400;
+    letter-spacing: -.08vw;
+    width: 70%;
+}
+
+#homelast p::selection{
+    color: white;
+    background-color: #000;
+}
+
+.features{
+    padding: 10vw 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#fheading h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+#fheading h1:nth-child(2){
+    color:transparent;
+    -webkit-text-stroke: 1px #000;
+}
+#fimages{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 70vw;
+    margin-top: 5vw;
+}
+
+#fleft{
+    overflow: hidden;
+    width:45%;
+    height: inherit;
+   
+    
+
+}
+.ele{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+   
+}
+.ele h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin : 1.6vw 0;
+
+}
+.ele h4{
+    opacity: 0.5;
+}
+.ele h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:45%;
+    height: inherit;
+}
+
+#fright .images{
+    width: 90%;
+    height: 75%;
+    background-color: grey;
+}
+#fright .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button:hover{
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    transition: background-color 0.5s ease, color 0.5s ease
+
+}
+
+.btn button{
+    padding : 1.3vw 2.5vw;
+    border-radius: 100px;
+    border : 2px solid #e6e6e6;
+    background-color: #fff;
+    font-size : 1vw;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+#dev{
+    width: 100%;
+    padding : 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height:1 ;
+    text-transform: capitalize;
+}
+
+
+#dev p{
+    font-size : 1.5vw;
+    margin-top:3vw;
+    letter-spacing: -.5px;
+    width: 54%;
+}
+
+#slides{
+    padding: 2vw 8vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.slide{
+    width:30%;
+}
+
+.slide .img{
+    width: 100%;
+    height: 220px;
+    background-color: grey;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slide .tag{
+    border-radius:100px;
+    width: fit-content;
+    padding : 10px 22px;
+    margin : 20px 0px;
+    background-color: #f5f0f0;
+}
+
+.slide .img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
